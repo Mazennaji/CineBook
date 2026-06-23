@@ -1,5 +1,0 @@
-C:\Users\lenovo\source\repos\CineBook\obj\Debug\net8.0-windows\CineBook.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lenovo\source\repos\CineBook\obj\Debug\net8.0-windows\CineBook.AssemblyInfoInputs.cache
-C:\Users\lenovo\source\repos\CineBook\obj\Debug\net8.0-windows\CineBook.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\CineBook\obj\Debug\net8.0-windows\CineBook.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\CineBook\obj\Debug\net8.0-windows\CineBook.sourcelink.json
