@@ -1,46 +1,60 @@
 <div align="center">
 
-<img src="https://api.iconify.design/mdi/movie-open-star.svg?color=%23E94560" width="72" height="72" alt="CineBook logo" />
+<img src="assets/cinebook-logo.png" width="120" alt="CineBook logo" />
 
 # CineBook
 
 **A premium movie ticket booking experience, built end-to-end in C# and SQL Server.**
 
+<sub>Click‑to‑select seat maps · role‑based dashboards · database‑enforced integrity — no two users can ever book the same seat.</sub>
+
+<br/>
+
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-WinForms-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![SQL Server](https://img.shields.io/badge/SQL_Server-Database-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/en-us/sql-server)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](#license)
+[![License](https://img.shields.io/badge/License-MIT-C9184A?style=for-the-badge)](#license)
 
-[![Stars](https://img.shields.io/github/stars/Mazennaji/CineBook?style=for-the-badge&color=E94560)](https://github.com/Mazennaji/CineBook/stargazers)
-[![Issues](https://img.shields.io/github/issues/Mazennaji/CineBook?style=for-the-badge&color=E94560)](https://github.com/Mazennaji/CineBook/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/Mazennaji/CineBook?style=for-the-badge&color=E94560)](https://github.com/Mazennaji/CineBook/commits/main)
+[![Stars](https://img.shields.io/github/stars/Mazennaji/CineBook?style=for-the-badge&color=C9184A)](https://github.com/Mazennaji/CineBook/stargazers)
+[![Issues](https://img.shields.io/github/issues/Mazennaji/CineBook?style=for-the-badge&color=C9184A)](https://github.com/Mazennaji/CineBook/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/Mazennaji/CineBook?style=for-the-badge&color=C9184A)](https://github.com/Mazennaji/CineBook/commits/main)
 
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://api.iconify.design/mdi/ticket-confirmation-outline.svg?color=%23E94560" width="40" />
+  <img src="https://api.iconify.design/mdi/ticket-confirmation-outline.svg?color=%23C9184A" width="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://api.iconify.design/mdi/seat-outline.svg?color=%23E94560" width="40" />
+  <img src="https://api.iconify.design/mdi/seat-outline.svg?color=%23C9184A" width="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://api.iconify.design/mdi/filmstrip.svg?color=%23E94560" width="40" />
+  <img src="https://api.iconify.design/mdi/filmstrip.svg?color=%23C9184A" width="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://api.iconify.design/mdi/shield-account-outline.svg?color=%23E94560" width="40" />
+  <img src="https://api.iconify.design/mdi/shield-account-outline.svg?color=%23C9184A" width="40" />
 </div>
+
+<br/>
+
+## Contents
+
+[Overview](#-overview) · [Tech Stack](#️-tech-stack) · [Architecture](#️-architecture) · [Getting Started](#-getting-started) · [Demo Accounts](#-demo-accounts) · [Seat Locking](#-how-seat-locking-works) · [Roadmap](#️-roadmap) · [License](#-license)
 
 <br/>
 
 ## ✨ Overview
 
-**CineBook** is a desktop movie ticket booking system built as a Visual Programming (CSCI370) project. It goes beyond CRUD basics with a genuinely interactive seat map, role-based dashboards, and database-level integrity guarantees — no two users can ever book the same seat.
+**CineBook** is a desktop movie ticket booking system built as a Visual Programming (CSCI370) project. It goes beyond CRUD basics with a genuinely interactive seat map, role-based dashboards, and database-level integrity guarantees.
+
+<div align="center">
 
 | | |
-|---|---|
+|:---:|:---|
 | 🎬 **Browse** | Filter movies by genre, see live seat availability per showtime |
 | 🪑 **Book** | Click-to-select visual seat map — not a dropdown |
 | ❌ **Cancel** | Instant seat release back into the pool |
 | 🛠️ **Admin** | Full control over the movie catalog and showtime schedule |
+
+</div>
 
 <br/>
 
@@ -150,11 +164,15 @@ Open `CineBook.csproj` in Visual Studio, let NuGet restore `System.Data.SqlClien
 
 ## 🔑 Demo Accounts
 
+<div align="center">
+
 | Role | Email | Password |
 |:---:|:---|:---:|
 | 🛡️ Admin | `admin@cinebook.com` | `admin123` |
 | 🎟️ User | `mazen@cinebook.com` | `user123` |
 | 🎟️ User | `sara@cinebook.com` | `user123` |
+
+</div>
 
 <br/>
 
@@ -188,7 +206,7 @@ This project was built for academic purposes (CSCI370 — Visual Programming). F
 
 <div align="center">
 
-Built with <img src="https://api.iconify.design/mdi/heart.svg?color=%23E94560" width="14" valign="middle"/> by **Mazen Naji**
+Built with <img src="https://api.iconify.design/mdi/heart.svg?color=%23C9184A" width="14" valign="middle"/> by **Mazen Naji**
 
 <img src="https://api.iconify.design/simple-icons/github.svg?color=%23FFFFFF" width="16" valign="middle"/> [github.com/Mazennaji](https://github.com/Mazennaji)
 
