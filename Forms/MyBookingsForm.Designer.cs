@@ -72,9 +72,7 @@
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvBookings).BeginInit();
             SuspendLayout();
-            // 
-            // pnlHeader
-            // 
+
             pnlHeader.BackColor = Color.FromArgb(10, 10, 15);
             pnlHeader.Controls.Add(lblTitle);
             pnlHeader.Controls.Add(lblTagline);
@@ -82,41 +80,33 @@
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Size = new Size(1040, 68);
             pnlHeader.TabIndex = 0;
-            // 
-            // lblTitle
-            // 
+
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new Font("Segoe UI Semibold", 17F, FontStyle.Bold);
+            lblTitle.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(30, 6);
+            lblTitle.Location = new Point(30, 8);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(189, 40);
+            lblTitle.Size = new Size(189, 34);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "My Bookings";
-            // 
-            // lblTagline
-            // 
+
             lblTagline.AutoSize = true;
             lblTagline.BackColor = Color.Transparent;
             lblTagline.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
             lblTagline.ForeColor = Color.FromArgb(201, 24, 74);
-            lblTagline.Location = new Point(32, 46);
+            lblTagline.Location = new Point(32, 50);
             lblTagline.Name = "lblTagline";
             lblTagline.Size = new Size(321, 19);
             lblTagline.TabIndex = 1;
             lblTagline.Text = "C I N E B O O K   ·   B O O K I N G   H I S T O R Y";
-            // 
-            // pnlAccent
-            // 
+
             pnlAccent.BackColor = Color.FromArgb(201, 24, 74);
             pnlAccent.Location = new Point(0, 68);
             pnlAccent.Name = "pnlAccent";
             pnlAccent.Size = new Size(1040, 2);
             pnlAccent.TabIndex = 1;
-            // 
-            // dgvBookings
-            // 
+
             dgvBookings.AllowUserToAddRows = false;
             dgvBookings.ColumnHeadersHeight = 29;
             dgvBookings.Location = new Point(30, 94);
@@ -127,27 +117,24 @@
             dgvBookings.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvBookings.Size = new Size(980, 430);
             dgvBookings.TabIndex = 2;
-            // 
-            // btnCancel
-            // 
+            StyleGrid(dgvBookings);
+
             btnCancel.Location = new Point(30, 540);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(280, 42);
             btnCancel.TabIndex = 3;
             btnCancel.Text = "Cancel Selected Booking";
+            StyleOutline(btnCancel, "#E24B4A");
             btnCancel.Click += btnCancel_Click;
-            // 
-            // btnBack
-            // 
+
             btnBack.Location = new Point(730, 540);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(280, 42);
             btnBack.TabIndex = 4;
             btnBack.Text = "← Back to Movies";
+            StyleOutline(btnBack, "#8A8A99");
             btnBack.Click += btnBack_Click;
-            // 
-            // MyBookingsForm
-            // 
+
             BackColor = Color.FromArgb(10, 10, 15);
             ClientSize = new Size(1040, 680);
             Controls.Add(pnlHeader);
