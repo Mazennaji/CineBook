@@ -193,41 +193,34 @@
             tabShowtimes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvShowtimes).BeginInit();
             SuspendLayout();
-            // 
-            // pnlAccent
-            // 
+
             pnlAccent.BackColor = Color.FromArgb(201, 24, 74);
             pnlAccent.Location = new Point(0, 70);
             pnlAccent.Name = "pnlAccent";
             pnlAccent.Size = new Size(1100, 2);
             pnlAccent.TabIndex = 3;
-            // 
-            // lblTitle
-            // 
+
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new Font("Segoe UI Semibold", 17F, FontStyle.Bold);
+            lblTitle.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
             lblTitle.ForeColor = Color.White;
             lblTitle.Location = new Point(30, 8);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(183, 40);
+            lblTitle.Size = new Size(183, 34);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Admin Panel";
-            // 
-            // lblTagline
-            // 
+
             lblTagline.AutoSize = true;
             lblTagline.BackColor = Color.Transparent;
             lblTagline.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
             lblTagline.ForeColor = Color.FromArgb(201, 24, 74);
-            lblTagline.Location = new Point(32, 48);
+            lblTagline.Location = new Point(32, 50);
             lblTagline.Name = "lblTagline";
             lblTagline.Size = new Size(272, 19);
             lblTagline.TabIndex = 1;
             lblTagline.Text = "C I N E B O O K   ·   M A N A G E M E N T";
-            // 
-            // btnLogout
-            // 
+
+            StyleOutline(btnLogout, "#C8C8D4");
             btnLogout.FlatAppearance.BorderColor = Color.FromArgb(42, 42, 56);
             btnLogout.Location = new Point(940, 20);
             btnLogout.Name = "btnLogout";
@@ -235,9 +228,7 @@
             btnLogout.TabIndex = 2;
             btnLogout.Text = "Log Out";
             btnLogout.Click += btnLogout_Click;
-            // 
-            // tabControl
-            // 
+
             tabControl.Controls.Add(tabMovies);
             tabControl.Controls.Add(tabShowtimes);
             tabControl.DrawMode = TabDrawMode.OwnerDrawFixed;
@@ -249,9 +240,7 @@
             tabControl.SizeMode = TabSizeMode.Fixed;
             tabControl.TabIndex = 4;
             tabControl.DrawItem += tabControl_DrawItem;
-            // 
-            // tabMovies
-            // 
+
             tabMovies.BackColor = Color.FromArgb(21, 21, 31);
             tabMovies.Controls.Add(lblMovieTitle);
             tabMovies.Controls.Add(txtMovieTitle);
@@ -273,126 +262,110 @@
             tabMovies.Size = new Size(1032, 612);
             tabMovies.TabIndex = 0;
             tabMovies.Text = "Movies";
-            // 
-            // lblMovieTitle
-            // 
+
             lblMovieTitle.AutoSize = true;
             lblMovieTitle.Location = new Point(20, 20);
             lblMovieTitle.Name = "lblMovieTitle";
             lblMovieTitle.Size = new Size(44, 20);
             lblMovieTitle.TabIndex = 0;
             lblMovieTitle.Text = "TITLE";
-            // 
-            // txtMovieTitle
-            // 
+            StyleLabel(lblMovieTitle);
+
             txtMovieTitle.Location = new Point(20, 42);
             txtMovieTitle.Name = "txtMovieTitle";
             txtMovieTitle.Size = new Size(250, 27);
             txtMovieTitle.TabIndex = 1;
-            // 
-            // lblGenre
-            // 
+            StyleInput(txtMovieTitle);
+
             lblGenre.AutoSize = true;
             lblGenre.Location = new Point(290, 20);
             lblGenre.Name = "lblGenre";
             lblGenre.Size = new Size(55, 20);
             lblGenre.TabIndex = 2;
             lblGenre.Text = "GENRE";
-            // 
-            // txtGenre
-            // 
+            StyleLabel(lblGenre);
+
             txtGenre.Location = new Point(290, 42);
             txtGenre.Name = "txtGenre";
             txtGenre.Size = new Size(150, 27);
             txtGenre.TabIndex = 3;
-            // 
-            // lblDuration
-            // 
+            StyleInput(txtGenre);
+
             lblDuration.AutoSize = true;
             lblDuration.Location = new Point(460, 20);
             lblDuration.Name = "lblDuration";
             lblDuration.Size = new Size(124, 20);
             lblDuration.TabIndex = 4;
             lblDuration.Text = "DURATION (MIN)";
-            // 
-            // txtDuration
-            // 
+            StyleLabel(lblDuration);
+
             txtDuration.Location = new Point(460, 42);
             txtDuration.Name = "txtDuration";
             txtDuration.Size = new Size(110, 27);
             txtDuration.TabIndex = 5;
-            // 
-            // lblRating
-            // 
+            StyleInput(txtDuration);
+
             lblRating.AutoSize = true;
             lblRating.Location = new Point(590, 20);
             lblRating.Name = "lblRating";
             lblRating.Size = new Size(60, 20);
             lblRating.TabIndex = 6;
             lblRating.Text = "RATING";
-            // 
-            // txtRating
-            // 
+            StyleLabel(lblRating);
+
             txtRating.Location = new Point(590, 42);
             txtRating.Name = "txtRating";
             txtRating.Size = new Size(100, 27);
             txtRating.TabIndex = 7;
-            // 
-            // lblDescription
-            // 
+            StyleInput(txtRating);
+
             lblDescription.AutoSize = true;
             lblDescription.Location = new Point(20, 90);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(100, 20);
             lblDescription.TabIndex = 8;
             lblDescription.Text = "DESCRIPTION";
-            // 
-            // txtDescription
-            // 
+            StyleLabel(lblDescription);
+
             txtDescription.Location = new Point(20, 112);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(670, 60);
             txtDescription.TabIndex = 9;
-            // 
-            // btnAddMovie
-            // 
+            StyleInput(txtDescription);
+
             btnAddMovie.Location = new Point(720, 42);
             btnAddMovie.Name = "btnAddMovie";
             btnAddMovie.Size = new Size(100, 32);
             btnAddMovie.TabIndex = 10;
             btnAddMovie.Text = "Add";
+            StyleButton(btnAddMovie, "#C9184A", "#FFFFFF");
             btnAddMovie.Click += btnAddMovie_Click;
-            // 
-            // btnUpdateMovie
-            // 
+
             btnUpdateMovie.Location = new Point(830, 42);
             btnUpdateMovie.Name = "btnUpdateMovie";
             btnUpdateMovie.Size = new Size(100, 32);
             btnUpdateMovie.TabIndex = 11;
             btnUpdateMovie.Text = "Update";
+            StyleOutline(btnUpdateMovie, "#5DCAA5");
             btnUpdateMovie.Click += btnUpdateMovie_Click;
-            // 
-            // btnDeleteMovie
-            // 
+
             btnDeleteMovie.Location = new Point(720, 90);
             btnDeleteMovie.Name = "btnDeleteMovie";
             btnDeleteMovie.Size = new Size(130, 32);
             btnDeleteMovie.TabIndex = 12;
             btnDeleteMovie.Text = "Delete Selected";
+            StyleOutline(btnDeleteMovie, "#E24B4A");
             btnDeleteMovie.Click += btnDeleteMovie_Click;
-            // 
-            // btnClearMovie
-            // 
+
             btnClearMovie.Location = new Point(860, 90);
             btnClearMovie.Name = "btnClearMovie";
             btnClearMovie.Size = new Size(110, 32);
             btnClearMovie.TabIndex = 13;
             btnClearMovie.Text = "Clear Form";
+            StyleOutline(btnClearMovie, "#8A8A99");
             btnClearMovie.Click += btnClearMovie_Click;
-            // 
-            // dgvMovies
-            // 
+
             dgvMovies.AllowUserToAddRows = false;
             dgvMovies.ColumnHeadersHeight = 29;
             dgvMovies.Location = new Point(20, 185);
@@ -403,10 +376,9 @@
             dgvMovies.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvMovies.Size = new Size(1000, 440);
             dgvMovies.TabIndex = 14;
+            StyleGrid(dgvMovies);
             dgvMovies.SelectionChanged += dgvMovies_SelectionChanged;
-            // 
-            // tabShowtimes
-            // 
+
             tabShowtimes.BackColor = Color.FromArgb(21, 21, 31);
             tabShowtimes.Controls.Add(lblShowtimeMovie);
             tabShowtimes.Controls.Add(cmbShowtimeMovie);
@@ -428,18 +400,15 @@
             tabShowtimes.Size = new Size(1032, 612);
             tabShowtimes.TabIndex = 1;
             tabShowtimes.Text = "Showtimes";
-            // 
-            // lblShowtimeMovie
-            // 
+
             lblShowtimeMovie.AutoSize = true;
             lblShowtimeMovie.Location = new Point(20, 20);
             lblShowtimeMovie.Name = "lblShowtimeMovie";
             lblShowtimeMovie.Size = new Size(54, 20);
             lblShowtimeMovie.TabIndex = 0;
             lblShowtimeMovie.Text = "MOVIE";
-            // 
-            // cmbShowtimeMovie
-            // 
+            StyleLabel(lblShowtimeMovie);
+
             cmbShowtimeMovie.BackColor = Color.FromArgb(31, 31, 43);
             cmbShowtimeMovie.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbShowtimeMovie.FlatStyle = FlatStyle.Flat;
@@ -449,18 +418,15 @@
             cmbShowtimeMovie.Name = "cmbShowtimeMovie";
             cmbShowtimeMovie.Size = new Size(220, 31);
             cmbShowtimeMovie.TabIndex = 1;
-            // 
-            // lblShowDate
-            // 
+
             lblShowDate.AutoSize = true;
             lblShowDate.Location = new Point(260, 20);
             lblShowDate.Name = "lblShowDate";
             lblShowDate.Size = new Size(45, 20);
             lblShowDate.TabIndex = 2;
             lblShowDate.Text = "DATE";
-            // 
-            // dtpShowDate
-            // 
+            StyleLabel(lblShowDate);
+
             dtpShowDate.CalendarForeColor = Color.FromArgb(232, 232, 240);
             dtpShowDate.CalendarMonthBackground = Color.FromArgb(31, 31, 43);
             dtpShowDate.Format = DateTimePickerFormat.Short;
@@ -468,93 +434,80 @@
             dtpShowDate.Name = "dtpShowDate";
             dtpShowDate.Size = new Size(140, 27);
             dtpShowDate.TabIndex = 3;
-            // 
-            // lblShowTime
-            // 
+
             lblShowTime.AutoSize = true;
             lblShowTime.Location = new Point(420, 20);
             lblShowTime.Name = "lblShowTime";
             lblShowTime.Size = new Size(42, 20);
             lblShowTime.TabIndex = 4;
             lblShowTime.Text = "TIME";
-            // 
-            // dtpShowTime
-            // 
+            StyleLabel(lblShowTime);
+
             dtpShowTime.Format = DateTimePickerFormat.Time;
             dtpShowTime.Location = new Point(420, 42);
             dtpShowTime.Name = "dtpShowTime";
             dtpShowTime.ShowUpDown = true;
             dtpShowTime.Size = new Size(110, 27);
             dtpShowTime.TabIndex = 5;
-            // 
-            // lblHall
-            // 
+
             lblHall.AutoSize = true;
             lblHall.Location = new Point(550, 20);
             lblHall.Name = "lblHall";
             lblHall.Size = new Size(44, 20);
             lblHall.TabIndex = 6;
             lblHall.Text = "HALL";
-            // 
-            // txtHall
-            // 
+            StyleLabel(lblHall);
+
             txtHall.Location = new Point(550, 42);
             txtHall.Name = "txtHall";
             txtHall.Size = new Size(110, 27);
             txtHall.TabIndex = 7;
-            // 
-            // lblTotalSeats
-            // 
+            StyleInput(txtHall);
+
             lblTotalSeats.AutoSize = true;
             lblTotalSeats.Location = new Point(680, 20);
             lblTotalSeats.Name = "lblTotalSeats";
             lblTotalSeats.Size = new Size(95, 20);
             lblTotalSeats.TabIndex = 8;
             lblTotalSeats.Text = "TOTAL SEATS";
-            // 
-            // txtTotalSeats
-            // 
+            StyleLabel(lblTotalSeats);
+
             txtTotalSeats.Location = new Point(680, 42);
             txtTotalSeats.Name = "txtTotalSeats";
             txtTotalSeats.Size = new Size(90, 27);
             txtTotalSeats.TabIndex = 9;
-            // 
-            // lblTicketPrice
-            // 
+            StyleInput(txtTotalSeats);
+
             lblTicketPrice.AutoSize = true;
             lblTicketPrice.Location = new Point(790, 20);
             lblTicketPrice.Name = "lblTicketPrice";
             lblTicketPrice.Size = new Size(69, 20);
             lblTicketPrice.TabIndex = 10;
             lblTicketPrice.Text = "PRICE ($)";
-            // 
-            // txtTicketPrice
-            // 
+            StyleLabel(lblTicketPrice);
+
             txtTicketPrice.Location = new Point(790, 42);
             txtTicketPrice.Name = "txtTicketPrice";
             txtTicketPrice.Size = new Size(90, 27);
             txtTicketPrice.TabIndex = 11;
-            // 
-            // btnAddShowtime
-            // 
+            StyleInput(txtTicketPrice);
+
             btnAddShowtime.Location = new Point(20, 90);
             btnAddShowtime.Name = "btnAddShowtime";
             btnAddShowtime.Size = new Size(160, 32);
             btnAddShowtime.TabIndex = 12;
             btnAddShowtime.Text = "Add Showtime";
+            StyleButton(btnAddShowtime, "#C9184A", "#FFFFFF");
             btnAddShowtime.Click += btnAddShowtime_Click;
-            // 
-            // btnDeleteShowtime
-            // 
+
             btnDeleteShowtime.Location = new Point(190, 90);
             btnDeleteShowtime.Name = "btnDeleteShowtime";
             btnDeleteShowtime.Size = new Size(190, 32);
             btnDeleteShowtime.TabIndex = 13;
             btnDeleteShowtime.Text = "Delete Selected Showtime";
+            StyleOutline(btnDeleteShowtime, "#E24B4A");
             btnDeleteShowtime.Click += btnDeleteShowtime_Click;
-            // 
-            // dgvShowtimes
-            // 
+
             dgvShowtimes.AllowUserToAddRows = false;
             dgvShowtimes.ColumnHeadersHeight = 29;
             dgvShowtimes.Location = new Point(20, 140);
@@ -565,9 +518,8 @@
             dgvShowtimes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvShowtimes.Size = new Size(1000, 470);
             dgvShowtimes.TabIndex = 14;
-            // 
-            // AdminDashboardForm
-            // 
+            StyleGrid(dgvShowtimes);
+
             BackColor = Color.FromArgb(10, 10, 15);
             ClientSize = new Size(1100, 760);
             Controls.Add(lblTitle);
