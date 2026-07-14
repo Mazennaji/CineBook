@@ -55,7 +55,7 @@
             b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             b.FlatAppearance.BorderColor = System.Drawing.ColorTranslator.FromHtml(color);
             b.FlatAppearance.BorderSize = 1;
-            b.FlatAppearance.MouseOverBackColor = System.Drawing.ControlPaint.Light(System.Drawing.ColorTranslator.FromHtml("#15151F"), 0.3f);
+            b.FlatAppearance.MouseOverBackColor = System.Windows.Forms.ControlPaint.Light(System.Drawing.ColorTranslator.FromHtml("#15151F"), 0.3f);
             b.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
             b.Cursor = System.Windows.Forms.Cursors.Hand;
         }

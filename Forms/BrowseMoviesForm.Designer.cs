@@ -59,8 +59,8 @@
             b.ForeColor = System.Drawing.Color.White;
             b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             b.FlatAppearance.BorderSize = 0;
-            b.FlatAppearance.MouseOverBackColor = System.Drawing.ControlPaint.Light(b.BackColor, 0.2f);
-            b.FlatAppearance.MouseDownBackColor = System.Drawing.ControlPaint.Dark(b.BackColor, 0.1f);
+            b.FlatAppearance.MouseOverBackColor = System.Windows.Forms.ControlPaint.Light(b.BackColor, 0.2f);
+            b.FlatAppearance.MouseDownBackColor = System.Windows.Forms.ControlPaint.Dark(b.BackColor, 0.1f);
             b.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             b.Cursor = System.Windows.Forms.Cursors.Hand;
         }
@@ -72,7 +72,7 @@
             b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             b.FlatAppearance.BorderColor = System.Drawing.ColorTranslator.FromHtml("#C9184A");
             b.FlatAppearance.BorderSize = 1;
-            b.FlatAppearance.MouseOverBackColor = System.Drawing.ControlPaint.Light(System.Drawing.ColorTranslator.FromHtml("#15151F"), 0.3f);
+            b.FlatAppearance.MouseOverBackColor = System.Windows.Forms.ControlPaint.Light(System.Drawing.ColorTranslator.FromHtml("#15151F"), 0.3f);
             b.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular);
             b.Cursor = System.Windows.Forms.Cursors.Hand;
         }
